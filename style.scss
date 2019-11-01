@@ -1,0 +1,256 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+header {
+    width: 100%;
+    height: 100vh;
+    background-image: url('/img/index.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    box-shadow: 12px 29px 81px 0px rgba(0,0,0,0.75);
+
+    .navbar {
+        display: flex;
+        width: 100%;
+        height: 155px;
+        
+        align-items: center;
+
+        #logo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            background-color: rgb(252, 219, 90);
+            top: -30px;
+            width: 151px;
+            height: 155px;
+            margin-left: 200px;
+            img{
+                width: 90px;
+                height: 79px;
+            }
+            h6{
+                margin-top: 5%;
+                font-family: Intro;
+                font-size: 1.7em;
+                color: #00a65b;
+            }
+
+        }
+
+        ul {
+            height: 100%;
+            width: 900px;
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            li {
+                font-family: Intro;
+                margin-left: 50px;
+                font-size: 24px;
+                color: #fff;
+
+            }
+        }
+
+        .btn_get-info {
+            display: flex;
+            border-radius: 35px;
+            background-color: rgb(255, 255, 255);
+            width: 200px;
+            height: 70px;
+            color: black;
+            font-family: Intro;
+            font-size: 1.6em;
+            justify-content: center;
+            margin-left: 10%;
+            align-items: center;
+            outline: none;
+            transition: all .2s;
+            
+        }
+        .btn_get-info:hover{
+            background-color: #6b5656;
+            color: white;
+        }
+        
+    }
+    h1{
+        font-size: 170px;
+        font-family: 'Gloss And Bloom';
+        color: white;
+        margin-left: 20%;
+    }
+    .mouse {
+        border: 2px solid #ffffff;
+        border-radius: 13px;
+        bottom: 40px;
+        display: block;
+        height: 46px;
+        left: 50%;
+        margin: 0 auto 0 -26px;
+        position: absolute;
+        width: 26px;
+    }
+    .mouse span {
+        animation-duration: 1.3s;
+        animation-fill-mode: both;
+        animation-iteration-count: infinite;
+        animation-name: scroll;
+        background: none repeat scroll 0 0 #ffffff;
+        border: 1px solid transparent;
+        border-radius: 6px;
+        display: block;
+        height: 6px;
+        margin: 6px auto;
+        width: 6px;
+    }
+    @keyframes scroll {
+    0% {
+        opacity: 1;
+        transform: translateY(0px);
+        width: 5px;
+        height: 5px;
+        border-radius: 5px;
+        
+        
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(20px);
+        width: 4px;
+        height: 4px;
+        border-radius: 4px;
+        
+    }
+    }
+    
+}
+main{
+    width: 100%;
+    
+   
+    .food_services{
+        width: 100%;
+        height: 500px;  
+        
+        .title-services{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            align-items: center;
+            margin-top: 50px;
+            .block-title{
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                h3{
+                    font-family: Intro;
+                    font-size: 40px;
+                }
+                h5{
+                    margin-left: 5px;
+                    font-family: 'Abel';
+                    font-size: 40px;
+                }
+            }
+            p{
+                margin-top: 10px;
+                margin-bottom: -5px;
+                color: #837c7c;
+                font-size: 24px;
+            }
+        }
+
+        // Таблички
+        .plates{
+            display: flex;            
+            width: 100%;
+            justify-content: space-around;
+            
+            margin-top: 80px;
+            
+            
+            .plate{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                height: 300px;
+                width: 240px;
+                background-color: rgb(163, 217, 241);
+                transition: all .4s;
+                img{
+                    width: 80px;
+                    height: 80px;
+
+                }
+                p{
+                    text-align: center;
+                    margin-top: 50px;
+                    font-family: 'Raleway';
+                }
+            }
+            .plate:hover{
+                background-color: rgb(79, 86, 88);
+                color: white;
+                border-radius: 10px;
+            }
+        }
+
+
+    }
+    .food_discover{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 600px;
+        background-color: #252a2d;
+        box-shadow: 12px 29px 81px 0px rgba(0,0,0,0.75);
+        .block-title{
+            display: flex;
+            color: white;
+            flex-direction: column;       
+            margin-left: 200px;
+            margin-top: 90px;
+            h2{
+                font-family: Intro;
+                font-size: 3em;
+            }
+            h3{
+                font-family: 'Raleway';
+                font-size: 3em;
+                letter-spacing: 10px;
+            }
+            p{
+                font-family: "Candara";
+                font-size: 1.3em;
+                margin-top: 30px;
+            }
+        }
+        .btn_discover{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 200px;
+            height: 70px;  
+            margin-left: 200px;
+            margin-top: 90px;          
+            border-radius: 30px;
+            border: none;
+            background-color: #fcdb5a;
+            h3{
+                font-family: Raleway;
+                font-size: 1.3em;
+            }
+        }
+    }
+}
