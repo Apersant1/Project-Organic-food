@@ -49,6 +49,8 @@ header {
             list-style: none;
             display: flex;
             justify-content: center;
+            margin-left: 50px;
+            margin-top: 40px;
             align-items: center;
 
             li {
@@ -57,6 +59,44 @@ header {
                 font-size: 24px;
                 color: #fff;
 
+            }
+            .btn {
+                display: inline-block;
+                color: white;
+                font-family: Intro;
+                font-size: 1.1em;
+                letter-spacing: 5px;
+                min-width: 80px;
+                text-decoration: none;
+                margin-right: 50px;
+                padding: 20px;
+                position: relative;
+                text-align: center;
+                
+                &:hover {
+                    .button-stroke:nth-child(2) {
+                        stroke-dashoffset: 0;
+                    }
+                }
+            }
+            
+            .button-stroke {
+                display: block;
+                width: calc(100% - 40px);
+                height: 10px;
+                stroke: yellow;
+                position: absolute;
+                left: 20px;
+                bottom: -5px;
+                stroke-width: 4;
+                
+                &:nth-child(2) {
+                    stroke-dasharray: 650px;
+                    stroke-dashoffset: 650px;
+                    stroke: darken(#263238, 10%);
+                    stroke-width: 5;
+                    transition: stroke-dashoffset 800ms ease-out;
+                }
             }
         }
 

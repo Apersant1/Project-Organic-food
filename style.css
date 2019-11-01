@@ -68,6 +68,8 @@ header .navbar ul {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin-left: 50px;
+  margin-top: 40px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -78,6 +80,44 @@ header .navbar ul li {
   margin-left: 50px;
   font-size: 24px;
   color: #fff;
+}
+
+header .navbar ul .btn {
+  display: inline-block;
+  color: white;
+  font-family: Intro;
+  font-size: 1.1em;
+  letter-spacing: 5px;
+  min-width: 80px;
+  text-decoration: none;
+  margin-right: 50px;
+  padding: 20px;
+  position: relative;
+  text-align: center;
+}
+
+header .navbar ul .btn:hover .button-stroke:nth-child(2) {
+  stroke-dashoffset: 0;
+}
+
+header .navbar ul .button-stroke {
+  display: block;
+  width: calc(100% - 40px);
+  height: 10px;
+  stroke: yellow;
+  position: absolute;
+  left: 20px;
+  bottom: -5px;
+  stroke-width: 4;
+}
+
+header .navbar ul .button-stroke:nth-child(2) {
+  stroke-dasharray: 650px;
+  stroke-dashoffset: 650px;
+  stroke: #11171a;
+  stroke-width: 5;
+  -webkit-transition: stroke-dashoffset 800ms ease-out;
+  transition: stroke-dashoffset 800ms ease-out;
 }
 
 header .navbar .btn_get-info {
